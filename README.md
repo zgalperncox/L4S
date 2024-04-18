@@ -57,7 +57,7 @@ Now you must reboot the machine and select the new kernel. (It's extremely impor
 - Reboot the machine
 	- On startup, click F10 to open the boot options menu and navigate to the Boot options. Disable secure boot. Save and exit.
 	- Spam the esc key while the Intel NUC logo shows up, and when it disappears immediately stop pressing the key. This will open the boot menu. 
-		- If you go too far into the grub command prompt ---
+		- If you are entered into the grub command line, quickly type 'normal', hit enter, then **IMMEDIATELY** spam escape again. This needs to be quick so that the machine doesn't skip over the grub menu.
 	- Select 'Advanced options for Ubuntu' and then notice the kernel name that includes l4s-testing and (recovery mode). This will boot the machine with the correct kernel. Before selecting the kernel, read the information directly below and jot down the position number of the kernel. Once the number is written down, select the kernel and click enter.
 
 - Automatically boot machine with L4S kernel:
