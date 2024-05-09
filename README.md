@@ -80,27 +80,5 @@ From now on, each time the machine is rebooted it will automatically boot with t
 Please make sure to always verify you are on the correct kernel by running ```uname -a```. If incorrect, then redo these steps.
 
 ## Configure Kernel
-These instructions are pulled from Cardwell's instructions:
-
- - ### Enabling Accurate ECN
-	- ```sysctl net.ipv4.tcp_ecn=3```
-
-- ### Enabling BBRv2 CC w/ Accurate ECN
-
-	- ```sysctl net.ipv4.tcp_ecn=3 ```
-	- ```net.ipv4.tcp_congestion_control=bbr2```
-
-- ### Enabling TCP Prague CC w/ Accurate ECN
-
-	- ```sysctl net.ipv4.tcp_ecn=3```
-	- ```net.ipv4.tcp_congestion_control=prague```
-
-- ### Enabling CUBIC CC w/ Accurate ECN
-
-	- ```sysctl net.ipv4.tcp_ecn=3``` 	
-	- ```net.ipv4.tcp_congestion_control=cubic```
-
-- ### Enabling CUBIC CC w/o Accurate ECN
-
-	- ```sysctl net.ipv4.tcp_ecn=3``` 	
-	- ```net.ipv4.tcp_congestion_control=cubic```
+Enable Accurate ECN (this may need to be done after each reboot of the machine).
+- ```sysctl net.ipv4.tcp_ecn=3```
