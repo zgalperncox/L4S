@@ -58,12 +58,12 @@ Now you must reboot the machine and select the new kernel. (It's extremely impor
 	- On startup, click F10 to open the boot options menu and navigate to the Boot options. Disable secure boot. Save and exit.
 	- Spam the esc key while the Intel NUC logo shows up, and when it disappears immediately stop pressing the key. This will open the boot menu. 
 		- If you are entered into the grub command line, quickly type 'normal', hit enter, then **IMMEDIATELY** spam escape again. This needs to be quick so that the machine doesn't skip over the grub menu.
-	- Select 'Advanced options for Ubuntu' and then notice the kernel name that includes l4s-testing and (recovery mode). This will boot the machine with the correct kernel. Before selecting the kernel, read the information directly below and jot down the position number of the kernel. Once the number is written down, select the kernel and click enter.
+	- Select 'Advanced options for Ubuntu' and then notice the kernel name that includes l4s-testing (but NOT recovery mode). This will boot the machine with the correct kernel. Before selecting the kernel, read the information directly below and jot down the position number of the kernel. Once the number is written down, select the kernel and click enter.
 
 - Automatically boot machine with L4S kernel:
 	- The usual location for Advanced options is position 1 (as seen below - lists start at position 0).
 ![enter image description here](https://media.licdn.com/dms/image/D4D12AQErfgoiNV7_vw/article-inline_image-shrink_400_744/0/1685965207575?e=2147483647&v=beta&t=4cZ6uLYlX1j1xCWkRta9HYZf-jP-m4QSsdkMQ1KsAdY)
-	- The location for the kernel will depend on your machine. Keep in mind the position of the l4s-testing (recovery mode) kernel in this list on this menu. You will need it.
+	- The location for the kernel will depend on your machine. Keep in mind the position of the l4s-testing kernel in this list on this menu. You will need it.
 		- For example, the kernel surrounded by the red box below is in position 2.
 ![enter image description here](https://media.licdn.com/dms/image/D4D12AQHv1r978b400Q/article-inline_image-shrink_400_744/0/1685965256052?e=2147483647&v=beta&t=drWrRTpJ0X-NnZ2-bcdtuYJkJxcn1DXvSPVIoeRFJP8)
 - Once booted up:
