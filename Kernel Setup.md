@@ -81,4 +81,4 @@ Please make sure to always verify you are on the correct kernel by running ```un
 
 ## Configure Kernel
 Enable Accurate ECN (this may need to be done after each reboot of the machine).
-- ```sysctl net.ipv4.tcp_ecn=3```
+- ```sysctl net.ipv4.tcp_ecn=3 net.ipv4.tcp_congestion_control=prague```
