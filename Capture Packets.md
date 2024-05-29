@@ -16,7 +16,7 @@ Either SSH into or be at the physical Dell station in the lab. I recommend being
 - Once both devices have been successfully connected, follow instructions for the devices you are testing (either NUCs or Macs).
 
 ## Intel NUC iperf3 Testing
-- In both SSH windows, enable TCP prague (this is all on one line):
+- In both SSH windows, enable TCP prague (may be redundant) (this is all on one line):
 	- `sudo sysctl net.ipv4.tcp_ecn=3 net.ipv4.tcp_congestion_control=prague`
 - From the SSH window of the server side (zack@l4s-NUC2), open an iperf3 server:
 	- ```iperf3 -s```
