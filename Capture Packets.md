@@ -11,8 +11,7 @@ Either SSH into or be at the physical Dell station in the lab. I recommend being
 		 - NUC2 (server): 192.168.0.86
 		 - Mac Mini 1: 192.168.0.25
 		 - Mac Mini 2: 192.168.0.136
-- ```ssh zack@ip```
-	- Contact Zack for password.
+- ```ssh user@ip```
 - Once both devices have been successfully connected, follow instructions for the devices you are testing (either NUCs or Macs).
 
 ## Intel NUC iperf3 Testing
@@ -21,7 +20,7 @@ Either SSH into or be at the physical Dell station in the lab. I recommend being
 - From the SSH window of the server side (zack@l4s-NUC2), open an iperf3 server:
 	- ```iperf3 -s```
 	-  You should see ```Server listening on 5201``` if successfully started
-- On the client side (zack@l4sNUC1), you have the option of testing with L4S or without L4S (we'll call this Classic testing).
+- On the client side (user@l4sNUC1), you have the option of testing with L4S or without L4S (we'll call this Classic testing).
 ### Classic and L4S Testing
 - Before running the iperf3 test, navigate to localhost in a browser and open the Packet Capture User Interface.
 - In the Test name box, name the test with specific terms that will help you remember which test the results apply to.
@@ -43,7 +42,7 @@ Testing on the Mac Minis is similar to the NUCs with a few differences. Mac uses
 - From the SSH window of the server side (zack@l4s-NUC2), open an iperf3 server:
 	- ```iperf3-darwin -s```
 	-  You should see ```Server listening on 5201``` if successfully started
-- On the client side (zack@ip184-176-49-135), you have the option of testing with L4S or without L4S (we'll call this QUIC testing, based on Apple QUIC).
+- On the client side (user@ip184-176-49-135), you have the option of testing with L4S or without L4S (we'll call this QUIC testing, based on Apple QUIC).
 
 ### QUIC and L4S Testing
 - Before running the iperf3 test, navigate to localhost in a browser and open the Packet Capture User Interface.
